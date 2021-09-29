@@ -16,6 +16,8 @@ public class SysDictController {
     SysDictService sysDictService;
 
     @RequestMapping(method = RequestMethod.GET)
+
+
     public Object list(Long id){
         return sysDictService.getOldName(id);
     }
